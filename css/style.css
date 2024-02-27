@@ -284,6 +284,9 @@ aside li {
 aside li ul {
     display: none;
 }
+aside ul li:hover >a{
+    color: #fff;
+}
 
 aside li:hover ul {
     display: block;
