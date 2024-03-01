@@ -63,6 +63,36 @@ nav {
     column-gap: 22px;
     align-items: center;
 }
+.socials a{
+    display: block;
+    background: url(../img/icons.png);
+    transition: 0.3s;
+}
+a.fb{
+    width: 11px;
+    height: 21px;
+    background-position: 0 0;
+    
+}
+a.tw{
+    width: 21px;
+    height: 17px;
+    background-position: -14px 0;
+}
+a.inst{
+    width: 21px;
+    height: 22px;
+    background-position: -37px 0;
+}
+.fb:hover{
+    background-position: 0 -24px;
+}
+.tw:hover{
+    background-position: -14px -24px;
+}
+.inst:hover{
+    background-position: -37px -24px;
+}
 
 .header-info {
     display: flex;
@@ -74,6 +104,13 @@ nav {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+}
+
+.phn::before{
+    background-image: url(../img/icons.png);
+    background: no-repeat;
+
+
 }
 
 .phone a {
