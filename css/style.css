@@ -103,14 +103,20 @@ a.inst{
 .phone{
     display: flex;
     flex-direction: column;
+  align-items: flex-end;
     row-gap: 12px;
 }
 
-.phn::before{
-    background-image: url(../img/icons.png);
-    background: no-repeat;
-
-
+a.phn:before{
+    content:"";
+    display: inline-block;
+   position: relative;
+   top: 2px;
+    left: -11px;
+    width: 19px;
+    height: 21px;
+    background: url(../img/icons.png), no-repeat;
+background-position: -62px 0;
 }
 
 .phone a {
@@ -134,6 +140,31 @@ a.inst{
     text-decoration: underline;
     font-family: "Arial";
     transition: .3s;
+}
+a.eml:before{
+    content:"";
+    display: inline-block;
+   position: relative;
+   top: 2px;
+    left: -12px;
+    width: 21px;
+    height: 15px;
+    background: url(../img/icons.png), no-repeat;
+background-position: -84px 0;
+}
+a.skype{
+    text-decoration: none;
+}
+a.skype:before{
+    content:"";
+    display: inline-block;
+   position: relative;
+   top: 5px;
+    left: -11px;
+    width: 21px;
+    height: 21px;
+    background: url(../img/icons.png), no-repeat;
+background-position: -106px 0;
 }
 
 
@@ -317,12 +348,25 @@ aside li {
     list-style: none;
     background-color: #e4e4ec;
 }
+aside ul li a:after{
+    content:"";
+    display: inline-block;
+   position: relative;
+   right: -10px;
+    width: 8px;
+    height: 12px;
+    background: url(../img/icons.png), no-repeat;
+background-position: -129px 0;
+
+
+}
 
 aside li ul {
     display: none;
 }
 aside ul li:hover >a{
     color: #fff;
+    
 }
 
 aside li:hover ul {
@@ -331,6 +375,7 @@ aside li:hover ul {
 
 aside ul li:hover >a {
     background-color: #fd8300;
+    
 }
 aside li li:hover a{
     color: #666;
