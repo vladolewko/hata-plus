@@ -352,13 +352,11 @@ aside ul li a:after{
     content:"";
     display: inline-block;
    position: relative;
-   right: -10px;
+   right: -50px;
     width: 8px;
     height: 12px;
     background: url(../img/icons.png), no-repeat;
 background-position: -129px 0;
-
-
 }
 
 aside li ul {
@@ -375,6 +373,12 @@ aside li:hover ul {
 
 aside ul li:hover >a {
     background-color: #fd8300;
+    
+}
+aside ul li:hover >a:after {
+    width: 12px;
+    height: 8px;
+    background-position:-129px 24px ;
     
 }
 aside li li:hover a{
