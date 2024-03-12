@@ -208,6 +208,7 @@ color: #24242b;
 font-weight: 700;
 font-family: "Roboto Slab";
 }
+
 .column>p{
     margin-bottom: 25px;
     font-size: 14px;
@@ -232,6 +233,7 @@ text-decoration: none;
 .contacts{
     display: flex;
     justify-content: space-between;
+    align-items: start;
     padding-bottom: 33px;
     margin-bottom: 36px;
     border-bottom: 1px #e4e4ec solid;
