@@ -30,19 +30,50 @@ nav {
     background-color: #1f1f56;
 }
 
-.navigation {
-    display: flex;
+
+.navigation.top {
+display: none;
+position: absolute;
+width: 250px;
+top: 50px;
+left: 0;
+padding: 10px;
+background-color: #1f1f56;
+z-index: 1;
+
+
+    /* display: flex;
     justify-content: space-between;
+    align-items: center; */
+}
+.burger{
+    position: relative;
+width: 100%;
+height: 30px;
+
+}
+.burger{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+.burger:hover .navigation.top{
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu ul {
-    display: flex;
+
+
+
+.mainmenu {
+    /* display: flex;
     justify-content: space-between;
     column-gap: 30px;
-    align-items: center;
+    align-items: center; */
+
 }
 
-.menu a {
+.mainmenu li a {
     color: #b1b1d2;
     font-size: 14px;
     letter-spacing: 2px;
@@ -51,18 +82,21 @@ nav {
     transition: 0.3s;
 }
 
-.menu li:hover a,
+.mainmenu >li:hover >a,
 .email p:hover a,
 .phone p:hover a {
     color: #fd8300;
-
 }
 
 .social ul {
     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    /* display: flex;
     justify-content: space-between;
     column-gap: 22px;
-    align-items: center;
+    align-items: center; */
 }
 
 .socials a {
@@ -106,16 +140,19 @@ header{
 }
 
 .header-info {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
     margin-bottom: 40px;
     padding: 30px 0;
     position: relative;
-  
+}
+.header-info img{
+    margin-bottom: 20px;
 }
 
-.header-info::before {
+/* .header-info::before {
     content: '';
     position: absolute;
     width: 1px;
@@ -123,12 +160,13 @@ header{
     background: #e4e4ec;
     top: calc(50% - 25px);
     left: 50%;
-}
+} */
 
 .phone {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     row-gap: 12px;
 }
 
@@ -155,6 +193,7 @@ a.phn:before {
 }
 
 .email {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 12px;
@@ -218,6 +257,9 @@ a.skype:before {
     padding: 43px 0 30px;
     background-color: #ededf5;
 }
+.bottommenu{
+    margin-bottom: 20px;
+}
 
 .bottommenu a {
     color: #666;
@@ -233,6 +275,12 @@ a.skype:before {
     text-decoration: underline;
     transition: .3s;
 }
+.navigation.bottom{
+    display: flex;
+justify-content: space-around;
+   
+    flex-wrap: wrap;
+}
 
 .coperate {
     padding: 16px;
@@ -246,3 +294,42 @@ a.skype:before {
     font-family: "Arial";
     text-align: center;
 }
+
+@media screen and (min-width:600px){
+    .navigation.top {
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .burger{
+            display: none;
+        }
+        
+        .mainmenu {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+            align-items: center;
+        
+        }
+
+.header-info {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-info >a{
+    width: 100%;
+}
+.navigation.bottom{
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    align-items: center;
+}
+
+}
+
+

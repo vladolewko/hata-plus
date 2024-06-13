@@ -18,12 +18,24 @@
             <div class="wrapper">
                 <div class="navigation">
                     <div class="menu">
-                        <ul>
+                        <ul class="mainmenu">
                             <li><a href="index.html">Головна</a></li>
-                            <li><a href="#">Про компанію</a></li>
+                            <li><a href="#">Про компанію</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Продані</a></li>
+                                    <li><a href="#">Заброньованні</a></li>
+                                    <li class="rel"><a href="#">В процесі</a>
+                                        <ul class="second-submenu">
+                                            <li><a href="#">Продані</a></li>
+                                            <li><a href="#">Заброньованні</a></li>
+                                            <li><a href="#">В процесі</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <li><a href="price.html">Наші будівлі</a></li>
                             <li><a href="#">Акції</a></li>
-                            <li><a href="#">Контакти</a></li>
+                            <li><a href="contacts.html">Контакти</a></li>
                         </ul>
                     </div>
                     <div class="social">
@@ -102,12 +114,54 @@
                 </div>
             </div>
         </div>
+        <div class="wrapper">
+            <div class="contact">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/d/embed?mid=16osAp7qFH5mLCMcBp6g2xEI88IBJiMk&ehbc=2E312F"></iframe>
+                </div>
+                <form action="#">
+                    <div class="communication">
 
-        <div class="form">
+                        <div class="row">
 
+                            <th colspan="2">
+                                <h2>Форма зворотнього зв’язку</h2>
+                            </th>
+
+                        </div>
+                        <div class="row">
+
+                            <p><label for="name"></label><input type="text" name="name" id="name"
+                                    placeholder="Ваше ім’я"></p>
+                            <p><label for="phone"></label><input type="tel" name="name" id="phone"
+                                    placeholder="Телефон"></p>
+
+                        </div>
+                        <div class="row">
+
+                            <p><label for="message"></label><input type="text" name="mess" id="message"
+                                    placeholder="Тема повідомлення"></p>
+                        </div>
+                        <div class="row textarea">
+                            <p>
+                                <label for="text"></label><textarea name="text" id="text" cols="30" rows="10"
+                                    placeholder="Текст"></textarea>
+                            </p>
+                        </div>
+                        <div class="row last">
+                            <p><input class="button" type="button" value="Відправити" id="button"><label
+                                    for="button">Відправити</label></p>
+                            <p class="checkbox"><input type="checkbox" id="check"><label for="check">Я бажаю отримувати
+                                    останні новини</label></p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
         </div>
 
-        </div>
+
     </main>
 
 
