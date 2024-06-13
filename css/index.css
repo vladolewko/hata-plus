@@ -58,11 +58,11 @@ nav {
     text-align: center;
 }
 
-.cost {
+/*.cost {
     /* display: flex;
     justify-content: center;
     align-items: flex-end; */
-}
+/* } */
 
 .price {
     color: #fd8300;
@@ -100,9 +100,9 @@ h1 {
     padding-top: 36px;
 }
 
-article {
+/* article {
     /* width: 95%; */
-}
+/*} */
 
 article p {
     margin-bottom: 23px;
@@ -145,10 +145,10 @@ text-align: center;
     font-family: "Roboto Slab";
 }
 
-.examples {
+/* .examples {
     /* display: flex;
     justify-content: space-between; */
-}
+/* } */
 
 .examples a {
     text-decoration: underline;

@@ -65,13 +65,13 @@ height: 30px;
 
 
 
-.mainmenu {
+/* .mainmenu {
     /* display: flex;
     justify-content: space-between;
     column-gap: 30px;
     align-items: center; */
 
-}
+/*}*/
 
 .mainmenu li a {
     color: #b1b1d2;
